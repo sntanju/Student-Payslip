@@ -3,26 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Student Payslip</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-gray-100 flex justify-center items-center min-h-screen">
-    <div class="w-full max-w-4xl bg-white p-6 shadow-md flex flex-col md:flex-row gap-4">
-        <!-- Bank Copy -->
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Pay-slip</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
-    <div class="w-full max-w-4xl bg-white p-6 shadow-md flex flex-col md:flex-row gap-4">
-        <div class="border border-black p-4 w-full md:w-1/2 relative">
+    <div class="w-full max-w-4xl bg-white p-6 shadow-lg flex flex-col md:flex-row gap-4">
+        <div class="p-4 w-full md:w-1/2 relative shadow-lg">
+
+            <!-- Bank Copy  -->
             <div class="absolute top-2 right-2 text-sm font-semibold">Bank Copy</div>
             <div class="flex items-center mb-4 mt-2">
                 <img src="logo.png" alt="Institution Logo" class="h-12 mr-2">
@@ -31,23 +21,24 @@
                     <p class="text-sm">ভুয়াগাতি, রায়গঞ্জ, সিরাজগঞ্জ</p>
                 </div>
             </div>
-            <div class="border border-black p-2 text-center font-semibold relative">
+            <div class="border border-black p-2 text-center font-bold relative">
+                <div class="absolute inset-x-0 bottom-0  border-black"></div>
                 Student Pay-slip
-                <div class="absolute left-0 bottom-0 w-full border-black"></div>
             </div>
-            <div class="border-t border-black mt-2 flex justify-between p-2 relative">
+            <div class="border border-black mt-2 flex justify-between p-2">
                 <div class="w-2/3 pr-2">
-                    <p class="text-sm">Student ID: <strong class="font-semibold">231285</strong></p>
-                    <p class="text-sm">Name: <strong class="font-semibold">SREE DIPONGKOR CHANDRA ROY</strong></p>
-                    <p class="text-sm">Class & Section: <strong class="font-semibold">দশম শ্রেণী খ, Boy</strong></p>
-                    <p class="text-sm">Year: <strong class="font-semibold">2024</strong></p>
-                    <p class="text-sm">Invoice No.: <strong class="font-semibold">174028971191</strong></p>
-                    <p class="text-sm">Payment Date: 23/02/2025</p>
+                    <p>Student ID : <strong>231285</strong></p>
+                    <p>Name : <strong>SREE DIPONGKOR CHANDRA ROY</strong></p>
+                    <p>Class & Section : <strong>দশম শ্রেণী খ, Boy</strong></p>
+                    <p>Year : <strong>2024</strong></p>
+                    <p>Invoice No. : <strong>174028971191</strong></p>
+                    <p>Payment Date : 23/02/2025</p>
                 </div>
                 <div class="w-1/3 pl-2 border-l border-black flex justify-center items-center">
-                    <img src="qrcode.png" alt="QR Code" class="h-20 w-20">
+                    <img src="qrcode.png" alt="QR Code">
                 </div>
             </div>
+            
             <div class="border border-black mt-2">
                 <table class="w-full border-collapse text-sm">
                     <thead>
@@ -91,62 +82,85 @@
                 ............................................<br>
                 Accountant Signature
             </div>
-            
+
         </div>
-        
 
 
-        <!-- Institute Copy (Duplicate) -->
-        <div class="border p-4 w-full md:w-1/2 relative">
-            <div class="absolute top-2 right-2 text-sm font-bold">Institute Copy</div>
-            <div class="text-center mb-4">
-                <img src="logo.png" alt="Institution Logo" class="mx-auto h-12">
-                <h2 class="text-lg font-bold">Institution Name</h2>
-                <p class="text-sm">Location, City, Country</p>
-            </div>
-            <div class="border p-2 text-center font-bold">Student Pay-slip</div>
-            <div class="border-t mt-2 flex justify-between p-2">
+        <!-- Institute Copy  -->
+        <div class="p-4 w-full md:w-1/2 relative shadow-lg">
+            <div class="absolute top-2 right-2 text-sm font-semibold">Institute Copy</div>
+            <div class="flex items-center mb-4 mt-2">
+                <img src="logo.png" alt="Institution Logo" class="h-12 mr-2">
                 <div>
-                    <p><strong>Student ID:</strong> 231285</p>
-                    <p><strong>Name:</strong> SREE DIPONGKOR CHANDRA ROY</p>
-                    <p><strong>Class & Section:</strong> দশম শ্রেণী খ, Boy</p>
-                    <p><strong>Year:</strong> 2024</p>
-                    <p><strong>Invoice No.:</strong> 174028971191</p>
-                    <p><strong>Payment Date:</strong> 23/02/2025</p>
-                </div>
-                <div>
-                    <img src="qrcode.png" alt="QR Code" class="h-20 w-20">
+                    <h2 class="text-lg font-semibold">নূরে মদিনা মডের মাদ্রাসা এন্ড স্কুল</h2>
+                    <p class="text-sm">ভুয়াগাতি, রায়গঞ্জ, সিরাজগঞ্জ</p>
                 </div>
             </div>
-            <table class="w-full mt-2 border text-left">
-                <thead>
-                    <tr class="border bg-gray-200">
-                        <th class="p-2">Fee Name</th>
-                        <th class="p-2">Payable Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border">
-                        <td class="p-2">Tuition Fees - January</td>
-                        <td class="p-2">650.00</td>
-                    </tr>
-                    <tr class="border">
-                        <td class="p-2">Session Charge Fees - January</td>
-                        <td class="p-2">200.00</td>
-                    </tr>
-                    <tr class="border">
-                        <td class="p-2">Tuition Fees - February</td>
-                        <td class="p-2">650.00</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr class="border bg-gray-200">
-                        <td class="p-2 font-bold">Total</td>
-                        <td class="p-2 font-bold">1,500.00</td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="border border-black p-2 text-center font-bold relative">
+                <div class="absolute inset-x-0 bottom-0  border-black"></div>
+                Student Pay-slip
+            </div>
+            
+            <div class="border border-black mt-2 flex justify-between p-2">
+                <div class="w-2/3 pr-2">
+                    <p>Student ID : <strong>231285</strong></p>
+                    <p>Name : <strong>SREE DIPONGKOR CHANDRA ROY</strong></p>
+                    <p>Class & Section : <strong>দশম শ্রেণী খ, Boy</strong></p>
+                    <p>Year : <strong>2024</strong></p>
+                    <p>Invoice No. : <strong>174028971191</strong></p>
+                    <p>Payment Date : 23/02/2025</p>
+                </div>
+                <div class="w-1/3 pl-2 border-l border-black flex justify-center items-center">
+                    <img src="qrcode.png" alt="QR Code">
+                </div>
+            </div>
+            
+            <div class="border border-black mt-2">
+                <table class="w-full border-collapse text-sm">
+                    <thead>
+                        <tr class="border-b border-black">
+                            <th class="p-2 border-r border-black text-left">Fee Name</th>
+                            <th class="p-2 text-right">Payable Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-black">
+                            <td class="p-2 border-r border-black text-left">Tuition Fees - January</td>
+                            <td class="p-2 text-right">650.00</td>
+                        </tr>
+                        <tr class="border-b border-black">
+                            <td class="p-2 border-r border-black text-left">Session Charge Fees - January</td>
+                            <td class="p-2 text-right">200.00</td>
+                        </tr>
+                        <tr class="border-b border-black">
+                            <td class="p-2 border-r border-black text-left">Tuition Fees - February</td>
+                            <td class="p-2 text-right">650.00</td>
+                        </tr>
+                        <tr class="border-b border-black">
+                            <td class="p-2 font-semibold border-r border-black text-left">Total</td>
+                            <td class="p-2 font-semibold text-right">1,500.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="p-2 font-bold">In Words: One Thousand Five Hundred Taka Only</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="mt-2 text-sm">
+                <p class="font-bold">Note : Payable includes waiver, discount & fine.</p>
+                <p>Created by : Demo</p>
+                <p class="font-bold">Powered by: <span class="text-blue-400">School</span><span class="text-red-400">360</span></p>
+            </div>
+
+            <div class="text-right mt-4 text-sm font-semibold">
+                ............................................<br>
+                Accountant Signature
+            </div>
+
         </div>
     </div>
 </body>
+
 </html>
